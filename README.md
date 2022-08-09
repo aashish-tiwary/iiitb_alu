@@ -33,4 +33,15 @@ B(i). Biwise NOT : R(i) = NOT A(i).
 ![BasicBlockDiagram](https://user-images.githubusercontent.com/110485513/183733199-b26eac47-a5c7-4687-9595-8458340d26d4.jpg)
 # Output Waveform
 ![output](https://user-images.githubusercontent.com/110485513/183733693-34f8a02b-40c4-4e0e-89f2-94c457e310af.png)
+# About iverilog
+Icarus Verilog is an implementation of the Verilog hardware description language.
 
+# About GTKWave
+GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 which reads Ver Structural Verilog Compiler generated AET files as well as standard Verilog VCD/EVCD files and allows their viewing
+
+# Installing iverilog and GTKWave
+For Ubuntu
+Open your terminal and type the following to install iverilog and GTKWave
+
+$   sudo apt-get update
+$   sudo apt-get install iverilog gtkwave
