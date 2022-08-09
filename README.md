@@ -22,8 +22,7 @@ which tells the ALU what operation has to be performed by
 the ALU. Since ’Op’ is 3 bits long we can have a maximum
 of 2 3 = 8operations.[2] 
 
-                              ![ALU](https://user-images.githubusercontent.com/110485513/183733226-f09f742b-024a-4064-9e50-d9c7b03d7bb6.JPG)
-
+![ALU](https://user-images.githubusercontent.com/110485513/183733226-f09f742b-024a-4064-9e50-d9c7b03d7bb6.JPG)
 
 This ALU is capable of doing the following operations: Add
 Signed : R = A + B ( Treating A, B, and R as signed two’s
