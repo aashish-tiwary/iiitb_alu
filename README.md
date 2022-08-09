@@ -1,11 +1,11 @@
-# ALU
+# Arithematic Logic Unit
 ALU is a processor unit which performs the task
 of addition, subtraction, multiplication, and division. In order to
 support CPU for its arithmatic and logical processes, ALU has
 AU (i.e) arithmatic unit and LU (i.e) Logical Unit. This paper
 deals with its analysis and functioning of this important unit of
 CPU using verilog.
-# INTRODUCTION
+# Introduction
 An arithmatic logic unit is an important part of central
 processing unit and performs arithmatic and logic operations.
 It can take inputs as multiple bits through an input register.
