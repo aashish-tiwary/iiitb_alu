@@ -45,3 +45,12 @@ Open your terminal and type the following to install iverilog and GTKWave
 
 $   sudo apt-get update
 $   sudo apt-get install iverilog gtkwave
+# Contributors
+Aashish Tiwary
+Kunal Ghosh
+# Acknowledgments
+Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+# Contact Information
+Aashish Tiwary, Postgraduate Student, International Institute of Information Technology, Bangalore aashish.tiwary@iiitb.ac.in
+Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+References:
