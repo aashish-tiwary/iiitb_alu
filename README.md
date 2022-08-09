@@ -53,4 +53,9 @@ Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 # Contact Information
 Aashish Tiwary, Postgraduate Student, International Institute of Information Technology, Bangalore aashish.tiwary@iiitb.ac.in
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
-References:
+# References:
+[1] https://www.geeksforgeeks.org/introduction-of-alu-and-data-path/,
+some content was taken from here.
+
+[2] https://verilogcodes.blogspot.com/2015/10/verilog-code-for-simple-alu.
+verilog code was taken from here.
