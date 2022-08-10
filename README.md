@@ -62,8 +62,8 @@ $   gtkwave ALU.vcd
 ![ALU_sim](https://user-images.githubusercontent.com/110485513/183991147-e5a41ab6-8fb2-487e-9de5-9befe8322b56.jpg)
 
 # Contributors
-Aashish Tiwary
-Kunal Ghosh
+**Aashish Tiwary**
+**Kunal Ghosh**
 # Acknowledgments
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 # Contact Information
