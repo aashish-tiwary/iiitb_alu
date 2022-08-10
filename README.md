@@ -44,9 +44,23 @@ GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 whic
 # Installing iverilog and GTKWave
 For Ubuntu
 Open your terminal and type the following to install iverilog and GTKWave
-
+```
 $   sudo apt-get update
 $   sudo apt-get install iverilog gtkwave
+```
+# Functional Simulation
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+```
+$   sudo apt install -y git
+$   git clone https://https://github.com/aashish-tiwary/ALU
+$   cd iiitb_ALU
+$   iverilog iiitb_ALU.v iiitb_module_tb_alu.v
+$   ./a.out
+$   gtkwave ALU.vcd
+```
+# Functional Characteristics
+![ALU_sim](https://user-images.githubusercontent.com/110485513/183991147-e5a41ab6-8fb2-487e-9de5-9befe8322b56.jpg)
+
 # Contributors
 Aashish Tiwary
 Kunal Ghosh
