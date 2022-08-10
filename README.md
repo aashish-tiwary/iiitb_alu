@@ -63,7 +63,6 @@ $   gtkwave ALU.vcd
 
 # Contributors
 **Aashish Tiwary**  
-
 **Kunal Ghosh**
 # Acknowledgments
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
