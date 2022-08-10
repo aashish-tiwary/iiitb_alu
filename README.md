@@ -33,8 +33,12 @@ NOR B(i). Bitwise OR : R(i) = A(i) OR B(i). Bitwise NAND
 : R(i) = A(i) NAND B(i). Bitwise XOR : R(i) = A(i) XOR
 B(i). Biwise NOT : R(i) = NOT A(i).
 ![BasicBlockDiagram](https://user-images.githubusercontent.com/110485513/183733199-b26eac47-a5c7-4687-9595-8458340d26d4.jpg)
-# Output Waveform
-![output](https://user-images.githubusercontent.com/110485513/183733693-34f8a02b-40c4-4e0e-89f2-94c457e310af.png)
+# Applications
+Processor Applications
+
+Logical calculations
+
+Arithmatic Calculations
 # About iverilog
 Icarus Verilog is an implementation of the Verilog hardware description language.
 
