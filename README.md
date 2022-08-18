@@ -116,6 +116,7 @@ to generate schematics
 $   yosys>    show
 ```
 Now the synthesized netlist is written in "iiitb_alu_synth.v" file.
+
 **GATE LEVEL SIMULATION(GLS)**
 
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met. Folllowing are the commands to run the GLS simulation:
@@ -129,7 +130,7 @@ The gtkwave output for the netlist should match the output waveform for the RTL 
 ![Gls Waveform](https://user-images.githubusercontent.com/110485513/185358744-8c19ca0d-e1a7-448b-8453-4403b0f85453.png)
 
 # Contributors
-* ashish Tiwary
+* Aashish Tiwary
 * Kunal Ghosh
 # Acknowledgments
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
