@@ -125,6 +125,7 @@ GLS is generating the simulation output by running test bench with netlist file 
 iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 primitives.v sky130_fd_sc_hd.v iiitb_alu_synth.v iiitb_alu_tb.v
 ```
 The gtkwave output for the netlist should match the output waveform for the RTL design file. As netlist and design code have same set of inputs and outputs, we can use the same testbench and compare the waveforms.
+**GLS Waveforms**
 
 # Contributors
 **Aashish Tiwary**
