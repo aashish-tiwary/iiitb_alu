@@ -34,11 +34,9 @@ NOR B(i). Bitwise OR : R(i) = A(i) OR B(i). Bitwise NAND
 B(i). Biwise NOT : R(i) = NOT A(i).
 ![BasicBlockDiagram](https://user-images.githubusercontent.com/110485513/183733199-b26eac47-a5c7-4687-9595-8458340d26d4.jpg)
 # Applications
-Processor Applications
-
-Logical calculations
-
-Arithmatic Calculations
+* Processor Applications
+* Logical calculations
+* Arithmatic Calculations
 # About iverilog
 Icarus Verilog is an implementation of the Verilog hardware description language.
 
@@ -131,9 +129,8 @@ The gtkwave output for the netlist should match the output waveform for the RTL 
 ![Gls Waveform](https://user-images.githubusercontent.com/110485513/185358744-8c19ca0d-e1a7-448b-8453-4403b0f85453.png)
 
 # Contributors
-**Aashish Tiwary**
-
-**Kunal Ghosh**
+* ashish Tiwary
+* Kunal Ghosh
 # Acknowledgments
 Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 # Contact Information
