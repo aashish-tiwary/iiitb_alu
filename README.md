@@ -86,6 +86,41 @@ Now you need to create a yosys_run.sh file , which is the yosys script file used
 
 note: Identify the .lib file path in cloned folder and change the path in highlighted text to indentified path
 ```
+# read design
+
+read_verilog iiitb_alu.v
+
+# generic synthesis
+synth -top iiitb_alu
+
+# mapping to mycells.lib
+dfflibmap -liberty /home/aashish/asic/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /home/aashish/asic/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime,{D};strash;dch,-f;map,-M,1,{D}
+clean
+flatten
+# write synthesized design
+write_verilog -noattr iiitb_alu_synth.v
+show
+stat
+```
+Now, in the terminal of your verilog files folder, run the following commands:
+to synthesize
+```
+$   yosys
+$   yosys>    script yosys_run.sh
+```
+to see diffarent types of cells after synthesys
+```
+$   yosys>    stat
+```
+to generate schematics
+```
+$   yosys>    show
+```
+Now the synthesized netlist is written in "iiitb_alu_synth.v" file.
+**GATE LEVEL SIMULATION(GLS)**
+
+GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met. Folllowing are the commands to run the GLS simulation:
 
 # Contributors
 **Aashish Tiwary**
