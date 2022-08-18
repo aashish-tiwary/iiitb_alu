@@ -65,6 +65,28 @@ $   gtkwave ALU.vcd
 # Functional Characteristics
 ![ALU_sim](https://user-images.githubusercontent.com/110485513/183991147-e5a41ab6-8fb2-487e-9de5-9befe8322b56.jpg)
 
+# Synthesis
+**Synthesis:** Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
+
+Synthesis takes place in multiple steps:
+
+* Converting RTL into simple logic gates.
+* Mapping those gates to actual technology-dependent logic gates available in the technology libraries.
+* Optimizing the mapped netlist keeping the constraints set by the designer intact.
+**Synthesizer:** It is a tool we use to convert out RTL design code to netlist. Yosys is the tool I've used in this project.
+
+**About Yosys**
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains.
+
+more at https://yosyshq.net/yosys/
+To install yosys follow the instructions in this github repository
+
+* https://github.com/YosysHQ/yosys
+Now you need to create a yosys_run.sh file , which is the yosys script file used to run the synthesis. The contents of the yosys_run file are given below:
+
+note: Identify the .lib file path in cloned folder and change the path in highlighted text to indentified path
+```
+
 # Contributors
 **Aashish Tiwary**
 
