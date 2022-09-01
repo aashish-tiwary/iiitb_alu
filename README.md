@@ -441,11 +441,15 @@ The contents of the config.json are as follows. this can be modified specificall
 ```
 Save all the changes made above and Navigate to the openlane folder in terminal and give the following command :
 ``` $ sudo make mount ```
+
 ![image](https://user-images.githubusercontent.com/110485513/187857942-2fc7d26b-e845-4d82-9f26-ef8643e9374d.png)
+
 After entering the openlane container give the following command:
 
 ``` $ ./flow.tcl -interactive ```
+
 ![image](https://user-images.githubusercontent.com/110485513/187863681-48c5acf2-5510-4959-a041-af45ab4a3228.png)
+
 This command will take you into the tcl console. In the tcl console type the following commands:
 
 ``` % package require openlane 0.9 ```
@@ -454,13 +458,25 @@ This command will take you into the tcl console. In the tcl console type the fol
 
 ``` prep -design iiitb_freqdiv ```
 ![image](https://user-images.githubusercontent.com/110485513/187864155-1a95210b-d604-4363-bf27-a29f30ba3902.png)
+
 The following commands are to merge external the lef files to the merged.nom.lef. In our case sky130_vsdiat is getting merged to the lef file
 ``` set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
      add_lefs -src $lefs
 ``` 
 # Synthesis
 ``` % run_synthesis ```
+
 ![image](https://user-images.githubusercontent.com/110485513/187870973-6b3bbb32-0a82-4a4b-bcf4-9a412333c6bb.png)
+
+## Synthesis Reports
+Details of the gates used
+
+![image](https://user-images.githubusercontent.com/110485513/187872051-7e749fb7-06f8-4294-9a11-12614b3f886d.png)
+
+```
+Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/145 = 0.05517
+```
+
 
 # Contributors
 * Aashish Tiwary
