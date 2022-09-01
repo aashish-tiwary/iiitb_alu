@@ -476,8 +476,20 @@ Details of the gates used
 ```
 Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/145 = 0.05517
 ```
+The sky130_vsdinv should also reflect in your netlist after synthesis
 
+![image](https://user-images.githubusercontent.com/110485513/187873984-2710f1f2-3509-40a6-a11a-28f72e1a07e9.png)
 
+## Floorplan
+
+``` % run_floorplan ```
+
+![image](https://user-images.githubusercontent.com/110485513/187874314-294cf2b3-7fc0-49cb-b8bc-b5ed5160b989.png)
+
+## Floorplan Reports
+```
+
+```
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
