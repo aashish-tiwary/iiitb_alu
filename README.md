@@ -513,7 +513,41 @@ run_placement
 
 ![image](https://user-images.githubusercontent.com/110485513/187877779-d06b7321-5a6b-42b0-a1e7-12c7a83c364b.png)
 
+## Placement Reports
+Navigate to results->placement and type the Magic command in terminal to open the placement view
+```
+$ magic -T /home/himanshu/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.max.lef def read iiitb_alu.def &
 
+```
+![image](https://user-images.githubusercontent.com/110485513/187879039-408b9740-599b-431f-a0b7-953bc72c782b.png)
+
+Placement View
+
+![image](https://user-images.githubusercontent.com/110485513/187879240-2b878ca2-d1ab-420a-acac-2cf3734cda47.png)
+
+![image](https://user-images.githubusercontent.com/110485513/187879553-8a7bb63c-02e7-4625-90d4-03ea1aa98f6e.png)
+
+sky130_vsdinv in the placement view :
+????
+
+The sky130_vsdinv should also reflect in your netlist after placement
+
+![image](https://user-images.githubusercontent.com/110485513/187883307-2dac4dca-a863-4fbd-a34c-40da9ac74b55.png)
+
+# Clock Tree Synthesis
+```
+% run_cts
+```
+![image](https://user-images.githubusercontent.com/110485513/187883897-d941e97d-b1c9-49bb-bb7c-ef38578f26ae.png)
+
+# Routing
+```
+% run_routing
+```
+![image](https://user-images.githubusercontent.com/110485513/187884376-ba9dad45-ec51-45f0-9fe0-0a9ec2996574.png)
+
+
+# Routing Reports
 
 # Contributors
 * Aashish Tiwary
