@@ -560,7 +560,7 @@ Routing View
 
 ![image](https://user-images.githubusercontent.com/110485513/187885000-8bc21b03-7bb4-4033-a8dc-5dfc7b277cb6.png)
 
-The sky130_vsdinv should also reflect in your netlist after routing
+The sky130_vsdinv should reflect in your netlist after routing
 
 ![image](https://user-images.githubusercontent.com/110485513/187886087-ae16147b-fe09-4986-930d-ade00d910e4e.png)
 
