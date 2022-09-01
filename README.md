@@ -130,6 +130,7 @@ The gtkwave output for the netlist should match the output waveform for the RTL 
 ![Gls Waveform](https://user-images.githubusercontent.com/110485513/185358744-8c19ca0d-e1a7-448b-8453-4403b0f85453.png)
 
 # Advance Physical Design Using OpenLANE/Sky130
+OpenLANE is an opensource tool or flow used for opensource tape-outs. The OpenLANE flow comprises a variety of tools such as Yosys, ABC, OpenSTA, Fault, OpenROAD app, Netgen and Magic which are used to harden chips and macros, i.e. generate final GDSII from the design RTL. The primary goal of OpenLANE is to produce clean GDSII with no human intervention. OpenLANE has been tuned to function for the Google-Skywater130 Opensource Process Design Kit.
 
 **SoC Design & OpenLANE**
 
@@ -147,6 +148,9 @@ The ASIC flow objective is to convert RTL design to GDSII format used for final 
 This project is done in the course "Advanced Physical Design using OpenLANE/Sky130" by VLSI System Design Corporation. In this project a complete RTL to GDSII flow for PicoRV32a SoC is executed with Openlane using Skywater130nm PDK. Custom designed standard cells with Sky130 PDK are also used in the flow. Timing Optimisations are carried out. Slack violations are removed. DRC is verified.
 
 ![image](https://user-images.githubusercontent.com/110485513/187840332-0a8269cf-d90a-45e4-93fa-2d4354a533b3.png)
+
+**OpenLANE ASIC Flow**
+![image](https://user-images.githubusercontent.com/110485513/187843298-571e2d9c-882c-4d59-9b40-642cdb57d422.png)
 
 # Contributors
 * Aashish Tiwary
