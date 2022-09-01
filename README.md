@@ -387,6 +387,7 @@ Four timing parameters are used to characterize the inverter standard cell:
 To get a grid and to ensure the ports are placed correctly we can use
 
 ``` % grid 0.46um 0.34um 0.23um 0.17um ```
+
 ![image](https://user-images.githubusercontent.com/110485513/187854951-7c487c9d-e0c7-4f76-ad4e-44f4b4ef55e5.png)
 
 # Layout
@@ -409,6 +410,36 @@ $ touch iiitb_alu.v
 ```
 The iiitb_alu.v file should contain the verilog RTL code you have used and got the post synthesis simulation for.
 Copy ```sky130_fd_sc_hd__fast.lib, sky130_fd_sc_hd__slow.lib, sky130_fd_sc_hd__typical.lib and sky130_vsdinv.lef``` files to ```src``` folder in your design.
+The final src folder should look like this:
+???????????
+The contents of the config.json are as follows. this can be modified specifically for your design as and when required.
+```
+{
+    "DESIGN_NAME": "iiitb_alu",
+    "VERILOG_FILES": "dir::src/iiitb_alu.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "CLOCK_PERIOD": 10,
+    "PL_TARGET_DENSITY": 0.7,
+    "FP_SIZING" : "relative",
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 30,
+        "scl::sky130_fd_sc_hd": {
+            "FP_CORE_UTIL": 20
+        }
+    },
+    
+    "LIB_SYNTH": "dir::src/sky130_fd_sc_hd__typical.lib",
+    "LIB_FASTEST": "dir::src/sky130_fd_sc_hd__fast.lib",
+    "LIB_SLOWEST": "dir::src/sky130_fd_sc_hd__slow.lib",
+    "LIB_TYPICAL": "dir::src/sky130_fd_sc_hd__typical.lib",  
+    "TEST_EXTERNAL_GLOB": "dir::../iiitb_alu/src/*"
+
+
+}
+```
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
