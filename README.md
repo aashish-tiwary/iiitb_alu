@@ -149,7 +149,16 @@ This project is done in the course "Advanced Physical Design using OpenLANE/Sky1
 
 ![image](https://user-images.githubusercontent.com/110485513/187840332-0a8269cf-d90a-45e4-93fa-2d4354a533b3.png)
 
+* Synthesis: RTL Converted to gate level netlist using standard cell libraries (SCL)
+* Floor & Power Planning: Planning of silicon area to ensure robust power distribution
+* Placement: Placing cells on floorplan rows aligned with sites
+* Global Placement: for optimal position of cells
+* Detailed Placement: for legal positions
+* Routing: Valid patterns for wires
+* Signoff: Physical (DRC, LVS) and Timing verifications (STA)
+
 **OpenLANE ASIC Flow**
+
 ![image](https://user-images.githubusercontent.com/110485513/187843298-571e2d9c-882c-4d59-9b40-642cdb57d422.png)
 
 From conception to product, the ASIC design flow is an iterative process that is not static for every design. The details of the flow may change depending on ECO’s, IP requirements, DFT insertion, and SDC constraints, however the base concepts still remain. The flow can be broken down into 11 steps:
