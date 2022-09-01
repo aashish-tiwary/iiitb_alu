@@ -468,6 +468,7 @@ This command will take you into the tcl console. In the tcl console type the fol
 ![image](https://user-images.githubusercontent.com/110485513/187863898-36ce2e74-af8c-4bee-aeaa-234cf92673c3.png)
 
 ``` prep -design iiitb_freqdiv ```
+
 ![image](https://user-images.githubusercontent.com/110485513/187864155-1a95210b-d604-4363-bf27-a29f30ba3902.png)
 
 The following commands are to merge external the lef files to the merged.nom.lef. In our case sky130_vsdiat is getting merged to the lef file
@@ -475,6 +476,7 @@ The following commands are to merge external the lef files to the merged.nom.lef
      add_lefs -src $lefs
 ``` 
 # Synthesis
+
 ``` % run_synthesis ```
 
 ![image](https://user-images.githubusercontent.com/110485513/187870973-6b3bbb32-0a82-4a4b-bcf4-9a412333c6bb.png)
