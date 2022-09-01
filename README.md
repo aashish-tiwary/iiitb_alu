@@ -279,6 +279,13 @@ $ make test
 For Magic to be installed and work properly the following softwares have to be installed first:
 ## Installing csh
 ``` $ sudo apt-get install csh ```
+## Installing x11/xorg
+```$ sudo apt-get install x11
+
+$ sudo apt-get install xorg
+
+$ sudo apt-get install xorg openbox ```
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
