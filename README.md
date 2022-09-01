@@ -222,6 +222,15 @@ OpenLANE design stages
     * Netgen - Performs LVS Checks
     * CVC - Performs Circuit Validity Checks
 
+**OpenLANE Files**
+The openLANE file structure looks something like this:
+
+* skywater-pdk: contains PDK files provided by foundry
+* open_pdks: contains scripts to setup pdks for opensource tools
+* sky130A: contains sky130 pdk files
+* Invoking OpenLANE and Design Preparation
+* Openlane can be invoked using docker command followed by opening an interactive session. flow.tcl is a script that specifies details for openLANE flow.
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
