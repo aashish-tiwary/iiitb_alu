@@ -280,11 +280,49 @@ For Magic to be installed and work properly the following softwares have to be i
 ## Installing csh
 ``` $ sudo apt-get install csh ```
 ## Installing x11/xorg
-```$ sudo apt-get install x11
+``` $ sudo apt-get install x11
 
 $ sudo apt-get install xorg
 
-$ sudo apt-get install xorg openbox ```
+$ sudo apt-get install xorg openbox
+``` 
+## Installing GCC
+``` $ sudo apt-get install gcc ```
+## Installing build-essential
+``` $ sudo apt-get install build-essential ```
+## Installing OpenGL
+``` $ sudo apt-get install freeglut3-dev ```
+## Installing tcl/tk
+``` $ sudo apt-get install tcl-dev tk-dev ```
+## Installing magic
+After all the softwares are installed, run the following commands for installing magic:
+``` $ git clone https://github.com/RTimothyEdwards/magic
+
+$ cd magic
+
+$ ./configure
+
+$ make
+
+$ make install
+```
+## Klayout Installation
+``` $ sudo apt-get install klayout ```
+## ngspice Installation
+``` $ sudo apt-get install ngspice ``
+# Creating a Custom Inverter Cell
+Open Terminal in the folder you want to create the custom inverter cell.
+```
+$ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+
+$ cd vsdstdcelldesign
+
+$  cp ./libs/sky130A.tech sky130A.tech
+
+$ magic -T sky130A.tech sky130_inv.mag &
+```
+![image](https://user-images.githubusercontent.com/110485513/187848746-e2888c36-09f8-4d27-b1e8-1d24f2c767b7.png)
+
 
 # Contributors
 * Aashish Tiwary
