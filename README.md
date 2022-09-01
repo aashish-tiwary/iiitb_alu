@@ -564,6 +564,23 @@ The sky130_vsdinv should reflect in your netlist after routing
 
 ![image](https://user-images.githubusercontent.com/110485513/187886087-ae16147b-fe09-4986-930d-ade00d910e4e.png)
 
+We can also run the whole flow at once instead of step by step process by giving the following command in openlane container
+```
+$ ./flow.tcl -design iiitb_alu
+```
+All the steps will be automated and all the files will be generated.
+
+![image](https://user-images.githubusercontent.com/110485513/187893233-fe8a650d-170c-4a20-9ff7-c5c63b3b3441.png)
+
+# Viewing Layout in KLayout
+
+Navigate to results->signoff and type the Magic command in terminal to open the routing view
+
+```
+klayout iiitb_alu.mag
+```
+![image](https://user-images.githubusercontent.com/110485513/187894020-92b449fd-4bcf-4abe-841a-c2bdd012059f.png)
+
 
 # Contributors
 * Aashish Tiwary
