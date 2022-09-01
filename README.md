@@ -411,7 +411,9 @@ $ touch iiitb_alu.v
 The iiitb_alu.v file should contain the verilog RTL code you have used and got the post synthesis simulation for.
 Copy ```sky130_fd_sc_hd__fast.lib, sky130_fd_sc_hd__slow.lib, sky130_fd_sc_hd__typical.lib and sky130_vsdinv.lef``` files to ```src``` folder in your design.
 The final src folder should look like this:
-???????????
+
+![image](https://user-images.githubusercontent.com/110485513/187887394-6411faca-42b3-4a92-917a-f3220adefe0b.png)
+
 The contents of the config.json are as follows. this can be modified specifically for your design as and when required.
 ```
 {
