@@ -309,12 +309,9 @@ $ make install
 ## Klayout Installation
 ``` $ sudo apt-get install klayout ```
 ## ngspice Installation
-``` $ sudo apt-get install ngspice ``
+``` $ sudo apt-get install ngspice ```
 # Creating a Custom Inverter Cell
 Open Terminal in the folder you want to create the custom inverter cell.
-![image](https://user-images.githubusercontent.com/110485513/187851357-8ca3d9e0-78a3-4030-9a91-ffa792b82411.png)
-
-
 ```
 $ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 
@@ -325,9 +322,8 @@ $  cp ./libs/sky130A.tech sky130A.tech
 $ magic -T sky130A.tech sky130_inv.mag &
 ```
 ![image](https://user-images.githubusercontent.com/110485513/187850071-8a66f09b-d726-483b-b746-8120f7215333.png)
-```
-The above layout will open. The design can be verified and various layers can be seen and examined by selecting the area of examination and type what in the tcl window.
 
+The above layout will open. The design can be verified and various layers can be seen and examined by selecting the area of examination and type what in the tcl window.
 To extract Spice netlist, Type the following commands in tcl window.
 ```
 % extract all
@@ -338,21 +334,38 @@ To extract Spice netlist, Type the following commands in tcl window.
 ```
 ```cthresh 0 rthresh 0 ``` is used to extract parasitic capacitances from the cell.
 
+![image](https://user-images.githubusercontent.com/110485513/187851357-8ca3d9e0-78a3-4030-9a91-ffa792b82411.png)
+The spice netlist has to be edited to add the libraries we are using, The final spice netlist should look like the following:
 
+```
 * SPICE3 file created from sky130_inv.ext - technology: sky130A
-
+342
+​
+343
 .option scale=10000u
-
+344
+​
+345
 .subckt sky130_inv A Y VPWR VGND
+346
 M1000 Y A VPWR VPWR pshort w=37 l=23
+347
 +  ad=1443 pd=152 as=1517 ps=156
+348
 M1001 Y A VGND VGND nshort w=35 l=23
+349
 +  ad=1435 pd=152 as=1365 ps=148
+350
 C0 VPWR A 0.07fF
+351
 C1 VPWR Y 0.11fF
+352
 C2 Y A 0.05fF
+353
 C3 Y VGND 0.24fF
+354
 C4 VPWR VGND 0.59fF
+355
 .ends
 ```
 
