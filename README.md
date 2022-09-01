@@ -493,6 +493,10 @@ Die Area
 Core Area
 ![image](https://user-images.githubusercontent.com/110485513/187875305-1df8fa3c-1f90-4f63-b871-e5b02c5adfb9.png)
 
+Navigate to results->floorplan and type the Magic command in terminal to open the floorplan
+```
+$ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read ../../tmp/merged.nom.lef def read iiitb_alu.def &
+```
 
 # Contributors
 * Aashish Tiwary
