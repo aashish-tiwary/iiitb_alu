@@ -458,6 +458,9 @@ The following commands are to merge external the lef files to the merged.nom.lef
 ``` set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
      add_lefs -src $lefs
 ``` 
+# Synthesis
+``` % run_synthesis ```
+![image](https://user-images.githubusercontent.com/110485513/187870973-6b3bbb32-0a82-4a4b-bcf4-9a412333c6bb.png)
 
 # Contributors
 * Aashish Tiwary
