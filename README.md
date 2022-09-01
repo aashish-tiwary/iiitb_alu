@@ -472,9 +472,9 @@ This command will take you into the tcl console. In the tcl console type the fol
 ![image](https://user-images.githubusercontent.com/110485513/187864155-1a95210b-d604-4363-bf27-a29f30ba3902.png)
 
 The following commands are to merge external the lef files to the merged.nom.lef. In our case sky130_vsdiat is getting merged to the lef file
-``` set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-     add_lefs -src $lefs
-``` 
+``` set lefs [glob $::env(DESIGN_DIR)/src/*.lef] ```
+``` add_lefs -src $lefs ```
+
 # Synthesis
 
 ``` % run_synthesis ```
