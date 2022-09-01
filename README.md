@@ -487,9 +487,13 @@ The sky130_vsdinv should also reflect in your netlist after synthesis
 ![image](https://user-images.githubusercontent.com/110485513/187874314-294cf2b3-7fc0-49cb-b8bc-b5ed5160b989.png)
 
 ## Floorplan Reports
-```
+Die Area
+![image](https://user-images.githubusercontent.com/110485513/187874857-a50c2a77-f454-4a7a-a3e7-ce83e244b498.png)
 
-```
+Core Area
+![image](https://user-images.githubusercontent.com/110485513/187875305-1df8fa3c-1f90-4f63-b871-e5b02c5adfb9.png)
+
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
