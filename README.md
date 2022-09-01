@@ -597,7 +597,57 @@ klayout iiitb_alu.mag
 ```
 ![image](https://user-images.githubusercontent.com/110485513/187894020-92b449fd-4bcf-4abe-841a-c2bdd012059f.png)
 
+# Design Folder
 
+iiitb_alu
+├── config.jason
+├── runs
+│   ├── RUN_2022.09.01_11.03.54
+│   │   ├── config.tcl
+│   │   ├── logs
+│   │   │   ├── cts
+│   │   │   ├── cvc
+│   │   │   ├── floorplan
+│   │   │   ├── klayout
+│   │   │   ├── magic
+│   │   │   ├── placement
+│   │   │   ├── routing
+│   │   │   └── synthesis
+│   │   ├── reports
+│   │   │   ├── cts
+│   │   │   ├── cvc
+│   │   │   ├── floorplan
+│   │   │   ├── klayout
+│   │   │   ├── magic
+│   │   │   ├── placement
+│   │   │   ├── routing
+│   │   │   └── synthesis
+│   │   ├── results
+│   │   │   ├── cts
+│   │   │   ├── cvc
+│   │   │   ├── floorplan
+│   │   │   ├── klayout
+|   |   |   ├── signoff
+│   │   │   ├── magic
+│   │   │   ├── placement
+│   │   │   ├── routing
+│   │   │   └── synthesis
+│   │   └── tmp
+│   │       ├── cts
+│   │       ├── cvc
+│   │       ├── floorplan
+│   │       ├── klayout
+│   │       ├── magic
+│   │       ├── placement
+│   │       ├── routing
+│   │       └── synthesis
+├── src
+    ├── iiitb_alu.v
+    ├── sky130_fd_sc_hd__fast.lib 
+    ├── sky130_fd_sc_hd__slow.lib
+    ├── sky130_fd_sc_hd__typical.lib
+    ├── sky130_vsdinv.lef
+    
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
