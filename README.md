@@ -236,7 +236,7 @@ The openLANE file structure looks something like this:
 $ sudo apt install -y build-essential python3 python3-venv python3-pip
 ```
 # Docker Installation
-``
+```
 $ sudo apt-get remove docker docker-engine docker.io containerd runc (removes older version of docker if installed)
 
 $ sudo apt-get update
@@ -264,7 +264,7 @@ $ apt-cache madison docker-ce (copy the version string you want to install)
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin (paste the version string copies in place of <VERSION_STRING>)
 
 $ sudo docker run hello-world (If the docker is successfully installed u will get a success message here)
-``
+```
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
