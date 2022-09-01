@@ -439,6 +439,12 @@ The contents of the config.json are as follows. this can be modified specificall
 
 }
 ```
+Save all the changes made above and Navigate to the openlane folder in terminal and give the following command :
+``` $ sudo make mount ```
+![image](https://user-images.githubusercontent.com/110485513/187857942-2fc7d26b-e845-4d82-9f26-ef8643e9374d.png)
+After entering the openlane container give the following command:
+
+``` $ ./flow.tcl -interactive ```
 
 # Contributors
 * Aashish Tiwary
