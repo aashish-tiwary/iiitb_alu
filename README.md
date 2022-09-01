@@ -445,6 +445,19 @@ Save all the changes made above and Navigate to the openlane folder in terminal 
 After entering the openlane container give the following command:
 
 ``` $ ./flow.tcl -interactive ```
+![image](https://user-images.githubusercontent.com/110485513/187863681-48c5acf2-5510-4959-a041-af45ab4a3228.png)
+This command will take you into the tcl console. In the tcl console type the following commands:
+
+``` % package require openlane 0.9 ```
+
+![image](https://user-images.githubusercontent.com/110485513/187863898-36ce2e74-af8c-4bee-aeaa-234cf92673c3.png)
+
+``` prep -design iiitb_freqdiv ```
+![image](https://user-images.githubusercontent.com/110485513/187864155-1a95210b-d604-4363-bf27-a29f30ba3902.png)
+The following commands are to merge external the lef files to the merged.nom.lef. In our case sky130_vsdiat is getting merged to the lef file
+``` set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+     add_lefs -src $lefs
+``` 
 
 # Contributors
 * Aashish Tiwary
