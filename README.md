@@ -335,6 +335,7 @@ To extract Spice netlist, Type the following commands in tcl window.
 ```cthresh 0 rthresh 0 ``` is used to extract parasitic capacitances from the cell.
 
 ![image](https://user-images.githubusercontent.com/110485513/187851357-8ca3d9e0-78a3-4030-9a91-ffa792b82411.png)
+
 The spice netlist has to be edited to add the libraries we are using, The final spice netlist should look like the following:
 
 ```
@@ -368,8 +369,46 @@ C4 VPWR VGND 0.59fF
 355
 .ends
 ```
+Open the terminal in the directory where ngspice is stored and type the following command, ngspice console will open:
+``` $ ngspice sky130_inv.spice  ```
+Now you can plot the graphs for the designed inverter model.
+``` -> plot y vs time a ```
+Four timing parameters are used to characterize the inverter standard cell:
 
+1. Rise time: Time taken for the output to rise from 20% of max value to 80% of max value
+``` Rise time = (2.23843 - 2.17935) = 59.08ps ```
+2. Fall time- Time taken for the output to fall from 80% of max value to 20% of max value
+``` Fall time = (4.09291 - 4.05004) = 42.87ps ```
+3. Cell rise delay = time(50% output rise) - time(50% input fall)
+``` Cell rise delay = (2.20636 - 2.15) = 56.36ps ```
+4. Cell fall delay = time(50% output fall) - time(50% input rise)
+``` Cell fall delay = (4.07479 - 4.05) = 24.79ps ```
 
+To get a grid and to ensure the ports are placed correctly we can use
+
+``` % grid 0.46um 0.34um 0.23um 0.17um ```
+![image](https://user-images.githubusercontent.com/110485513/187854951-7c487c9d-e0c7-4f76-ad4e-44f4b4ef55e5.png)
+
+# Layout
+## Preparation
+The layout is generated using OpenLane. To run a custom design on openlane, Navigate to the openlane folder and run the following commands:
+```
+$ cd designs
+
+$ mkdir iiitb_alu
+
+$ cd iiitb_alu
+
+$ mkdir src
+
+$ touch config.json
+
+$ cd src
+
+$ touch iiitb_alu.v
+```
+The iiitb_alu.v file should contain the verilog RTL code you have used and got the post synthesis simulation for.
+Copy ```sky130_fd_sc_hd__fast.lib, sky130_fd_sc_hd__slow.lib, sky130_fd_sc_hd__typical.lib and sky130_vsdinv.lef``` files to ```src``` folder in your design.
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
