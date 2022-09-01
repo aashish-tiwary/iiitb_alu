@@ -129,8 +129,23 @@ The gtkwave output for the netlist should match the output waveform for the RTL 
 
 ![Gls Waveform](https://user-images.githubusercontent.com/110485513/185358744-8c19ca0d-e1a7-448b-8453-4403b0f85453.png)
 
-**Advance Physical Design Using OpenLANE/Sky130**
+# Advance Physical Design Using OpenLANE/Sky130
+
+**SoC Design & OpenLANE**
+
+Components of opensource digital ASIC design
+The design of digital Application Specific Integrated Circuit (ASIC) requires three enablers or elements - Resistor Transistor Logic Intellectual Property (RTL IPs), Electronic Design Automation (EDA) Tools and Process Design Kit (PDK) data.
+
+![image](https://user-images.githubusercontent.com/110485513/187842672-e0c003c2-7355-4c00-8c60-8a49030fec70.png)
+
+ * Opensource RTL Designs: github, librecores, opencores
+ * Opensource EDA tools: QFlow, OpenROAD, OpenLANE
+ * Opensource PDK data: Google Skywater130 PDK
+
+The ASIC flow objective is to convert RTL design to GDSII format used for final layout. The flow is essentially a software also known as automated PnR (Place & route).
+
 This project is done in the course "Advanced Physical Design using OpenLANE/Sky130" by VLSI System Design Corporation. In this project a complete RTL to GDSII flow for PicoRV32a SoC is executed with Openlane using Skywater130nm PDK. Custom designed standard cells with Sky130 PDK are also used in the flow. Timing Optimisations are carried out. Slack violations are removed. DRC is verified.
+
 ![image](https://user-images.githubusercontent.com/110485513/187840332-0a8269cf-d90a-45e4-93fa-2d4354a533b3.png)
 
 # Contributors
