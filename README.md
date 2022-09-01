@@ -497,6 +497,23 @@ Navigate to results->floorplan and type the Magic command in terminal to open th
 ```
 $ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read ../../tmp/merged.nom.lef def read iiitb_alu.def &
 ```
+![image](https://user-images.githubusercontent.com/110485513/187876570-9a287e08-3bc4-4d2a-9877-406e3f804c9d.png)
+
+Floorplan view
+![image](https://user-images.githubusercontent.com/110485513/187876983-dd4b8462-c2cb-4da1-9391-fbb5532b80d4.png)
+
+All the cells are placed in the left corner of the floorplan
+
+![image](https://user-images.githubusercontent.com/110485513/187877205-69e351ab-8b98-4f0d-9067-983429e00e62.png)
+
+# Placement
+```
+run_placement
+```
+
+![image](https://user-images.githubusercontent.com/110485513/187877779-d06b7321-5a6b-42b0-a1e7-12c7a83c364b.png)
+
+
 
 # Contributors
 * Aashish Tiwary
