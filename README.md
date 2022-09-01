@@ -230,7 +230,11 @@ The openLANE file structure looks something like this:
 * sky130A: contains sky130 pdk files
 * Invoking OpenLANE and Design Preparation
 * Openlane can be invoked using docker command followed by opening an interactive session. flow.tcl is a script that specifies details for openLANE flow.
-
+# Tools used for physical Design
+# Python Installation
+```
+$ sudo apt install -y build-essential python3 python3-venv python3-pip
+```
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
