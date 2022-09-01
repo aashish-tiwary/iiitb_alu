@@ -595,7 +595,7 @@ All the steps will be automated and all the files will be generated.
 Navigate to results->signoff and type the Magic command in terminal to open the routing view
 
 ```
-klayout iiitb_alu.mag
+$ klayout iiitb_alu.mag
 ```
 ![image](https://user-images.githubusercontent.com/110485513/187894020-92b449fd-4bcf-4abe-841a-c2bdd012059f.png)
 
