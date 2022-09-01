@@ -129,6 +129,10 @@ The gtkwave output for the netlist should match the output waveform for the RTL 
 
 ![Gls Waveform](https://user-images.githubusercontent.com/110485513/185358744-8c19ca0d-e1a7-448b-8453-4403b0f85453.png)
 
+**Advance Physical Design Using OpenLANE/Sky130**
+This project is done in the course "Advanced Physical Design using OpenLANE/Sky130" by VLSI System Design Corporation. In this project a complete RTL to GDSII flow for PicoRV32a SoC is executed with Openlane using Skywater130nm PDK. Custom designed standard cells with Sky130 PDK are also used in the flow. Timing Optimisations are carried out. Slack violations are removed. DRC is verified.
+![image](https://user-images.githubusercontent.com/110485513/187840332-0a8269cf-d90a-45e4-93fa-2d4354a533b3.png)
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
