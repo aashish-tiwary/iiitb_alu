@@ -265,6 +265,20 @@ $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING>
 
 $ sudo docker run hello-world (If the docker is successfully installed u will get a success message here)
 ```
+# OpenLane Installation
+```
+$ git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+
+$ cd OpenLane/
+
+$ make
+
+$ make test
+```
+# Magic Installation
+For Magic to be installed and work properly the following softwares have to be installed first:
+## Installing csh
+``` $ sudo apt-get install csh ```
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
