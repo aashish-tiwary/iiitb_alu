@@ -598,7 +598,7 @@ klayout iiitb_alu.mag
 ![image](https://user-images.githubusercontent.com/110485513/187894020-92b449fd-4bcf-4abe-841a-c2bdd012059f.png)
 
 # Design Folder
-
+```
 iiitb_alu
 ├── config.jason
 ├── runs
@@ -647,7 +647,8 @@ iiitb_alu
     ├── sky130_fd_sc_hd__slow.lib
     ├── sky130_fd_sc_hd__typical.lib
     ├── sky130_vsdinv.lef
-    
+```
+
 # Contributors
 * Aashish Tiwary
 * Kunal Ghosh
