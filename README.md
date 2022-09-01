@@ -548,6 +548,18 @@ The sky130_vsdinv should also reflect in your netlist after placement
 
 
 # Routing Reports
+Navigate to results->routing and type the Magic command in terminal to open the routing view
+```
+ $ magic -T /home/himanshu/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.max.lef def read iiitb_alu.def &
+```
+![image](https://user-images.githubusercontent.com/110485513/187884841-67c06171-71f4-4375-81ea-e66c3d173c19.png)
+
+Routing View
+
+![image](https://user-images.githubusercontent.com/110485513/187885000-8bc21b03-7bb4-4033-a8dc-5dfc7b277cb6.png)
+
+The sky130_vsdinv should also reflect in your netlist after routing
+
 
 # Contributors
 * Aashish Tiwary
