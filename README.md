@@ -530,10 +530,11 @@ run_placement
 ## Placement Reports
 Navigate to results->placement and type the Magic command in terminal to open the placement view
 ```
-$ magic -T /home/himanshu/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.max.lef def read iiitb_alu.def &
+$ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.nom.lef def read iiitb_alu.def &
 
 ```
-![image](https://user-images.githubusercontent.com/110485513/187879039-408b9740-599b-431f-a0b7-953bc72c782b.png)
+![placement](https://user-images.githubusercontent.com/110485513/191815257-359fe644-d267-409f-bf16-7978b4e4c14a.png)
+
 
 Placement View
 
@@ -566,9 +567,10 @@ The sky130_vsdinv should also reflect in your netlist after placement
 # Routing Reports
 Navigate to results->routing and type the Magic command in terminal to open the routing view
 ```
- $ magic -T /home/himanshu/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.nom.lef def read iiitb_alu.def &
+ $ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.nom.lef def read iiitb_alu.def &
 ```
-![image](https://user-images.githubusercontent.com/110485513/187884841-67c06171-71f4-4375-81ea-e66c3d173c19.png)
+![routing](https://user-images.githubusercontent.com/110485513/191816351-44801a14-993d-45a1-b390-09dec6f0e0d1.png)
+
 
 Routing View
 
@@ -587,6 +589,9 @@ We can also run the whole flow at once instead of step by step process by giving
 ```
 $ ./flow.tcl -design iiitb_alu
 ```
+![autoflow](https://user-images.githubusercontent.com/110485513/191836363-3b7d6c5f-6321-4adf-8003-e9c0e35d9597.png)
+
+
 All the steps will be automated and all the files will be generated.
 
 ![image](https://user-images.githubusercontent.com/110485513/187893233-fe8a650d-170c-4a20-9ff7-c5c63b3b3441.png)
