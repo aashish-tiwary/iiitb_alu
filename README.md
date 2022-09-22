@@ -508,11 +508,12 @@ Core Area
 
 Navigate to results->floorplan and type the Magic command in terminal to open the floorplan
 ```
-$ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read ../../tmp/merged.nom.lef def read iiitb_alu.def &
+$ magic -T /home/aashish/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech read lef ../../tmp/merged.nom.lef def read iiitb_alu.def &
 ```
-![image](https://user-images.githubusercontent.com/110485513/187876570-9a287e08-3bc4-4d2a-9877-406e3f804c9d.png)
+![floorplan](https://user-images.githubusercontent.com/110485513/191814281-c406b722-16f2-4834-950f-71ffc8467251.png)
 
 Floorplan view
+
 ![image](https://user-images.githubusercontent.com/110485513/187876983-dd4b8462-c2cb-4da1-9391-fbb5532b80d4.png)
 
 All the cells are placed in the left corner of the floorplan
