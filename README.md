@@ -467,7 +467,7 @@ This command will take you into the tcl console. In the tcl console type the fol
 
 ![image](https://user-images.githubusercontent.com/110485513/187863898-36ce2e74-af8c-4bee-aeaa-234cf92673c3.png)
 
-``` prep -design iiitb_freqdiv ```
+``` prep -design iiitb_alu ```
 
 ![image](https://user-images.githubusercontent.com/110485513/187864155-1a95210b-d604-4363-bf27-a29f30ba3902.png)
 
