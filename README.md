@@ -612,16 +612,18 @@ $ klayout iiitb_alu.mag
 ![stats](https://user-images.githubusercontent.com/110485513/192593335-1bb66e90-c835-49c5-9941-5fc6f092890d.png)
 
 **No. of flip-flops = 8**
+
 **No. of standard cells = 145**
+
 **flip-flop to standard cell ratio =0.055**
 
 ## Area of the design
-**9663.672 microns**
+**9663.672 microns^2**
 
 ![area](https://user-images.githubusercontent.com/110485513/192593738-b2cc8671-0619-49af-bd72-de2c5216a7ae.png)
 
 ## Performance (report_checks) GHz/MHz achieved for the design
-**285.714**
+**285.714 GHz**
 
 ![performance](https://user-images.githubusercontent.com/110485513/192595800-aec57c54-24ba-409b-b905-e5d78948be6b.png)
 
