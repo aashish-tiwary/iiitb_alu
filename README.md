@@ -628,7 +628,7 @@ $ klayout iiitb_alu.mag
 
 ![performance](https://user-images.githubusercontent.com/110485513/192595800-aec57c54-24ba-409b-b905-e5d78948be6b.png)
 
-**Power consumed for the design**
+## Power consumed for the design
 **Total Power = 1.73e-04 watts**
 
 ![report_power](https://user-images.githubusercontent.com/110485513/192604010-30f942a4-086c-4e9a-b858-e1bbbe699736.png)
