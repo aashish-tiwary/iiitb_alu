@@ -625,7 +625,7 @@ $ klayout iiitb_alu.mag
 ## Performance (report_checks) GHz/MHz achieved for the design
 **Performance = (1/(Clock Period - Slack))**
 
-**Performance of design = 1/(10-6.5) = 285.714 GHz**
+**Performance of design = 1/(10-6.5) = 2.85714 GHz**
 
 ![performance](https://user-images.githubusercontent.com/110485513/192595800-aec57c54-24ba-409b-b905-e5d78948be6b.png)
 
